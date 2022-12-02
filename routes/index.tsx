@@ -6,6 +6,7 @@ export default function Home() {
     <>
       <Head>
         <title>Fresh App</title>
+        <link rel="stylesheet" href="/global.css"></link>
       </Head>
       <div>
         <img

@@ -1,0 +1,13 @@
+/* PostCSS Testfile */
+
+/* the props */
+@import "open-props/postcss/style";
+
+/* optional imports that use the props */
+@import "open-props/postcss/normalize";
+@import "open-props/postcss/buttons";
+
+
+body {
+    background-image: var(--gradient-1);
+}
