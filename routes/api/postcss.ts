@@ -5,9 +5,10 @@ export const handler = async (
   _req: Request,
   _ctx: HandlerContext,
 ): Promise<Response> => {
-  const result = await postCssInstance.process(
-    await Deno.readTextFile("../../static/global.css"),
-  );
+  const fileContent = await Deno.readTextFile("static/global.css");
+  const result = await postCssInstance.process(fileContent, {
+    from: "static/global.css",
+  });
 
   const headers = new Headers();
   headers.set("Content-Type", "text/css");
