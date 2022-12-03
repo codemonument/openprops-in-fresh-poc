@@ -1,7 +1,8 @@
 {
   "tasks": {
     "start": "deno run -A --watch=static/,routes/ dev.ts",
-    "start-with-node-modules": "deno run -A --watch=static/,routes/ --node-modules-dir dev.ts"
+    "start-with-node-modules": "deno run -A --watch=static/,routes/ --node-modules-dir dev.ts",
+    "download-openprops": "deno run --allow-net --allow-write --allow-read ./scripts/download-openprops.ts"
   },
   "importMap": "./import_map.json",
   "compilerOptions": {
