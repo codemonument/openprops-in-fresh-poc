@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <Head>
         <title>Fresh App With Postcss</title>
-        <link rel="stylesheet" href="/postcss/global.css"></link>
+        <link rel="stylesheet" href="/postcss-jit/global.css"></link>
       </Head>
       <div>
         <h1>With PostCSS JIT Mode</h1>
