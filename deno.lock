@@ -270,9 +270,15 @@
   "npm": {
     "specifiers": {
       "open-props@1.5.1": "open-props@1.5.1",
-      "postcss-jit-props@1.0.8": "postcss-jit-props@1.0.8"
+      "postcss-inject@1.0.2": "postcss-inject@1.0.2",
+      "postcss-jit-props@1.0.8": "postcss-jit-props@1.0.8",
+      "postcss-js@4.0.0": "postcss-js@4.0.0"
     },
     "packages": {
+      "camelcase-css@2.0.1": {
+        "integrity": "sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==",
+        "dependencies": {}
+      },
       "globalyzer@0.1.0": {
         "integrity": "sha512-40oNTM9UfG6aBmuKxk/giHn5nQ8RVz/SS4Ir6zgzOv9/qC3kKZ9v4etGTcJbEl/NyVQH7FGU7d+X1egr57Md2Q==",
         "dependencies": {}
@@ -285,19 +291,48 @@
         "integrity": "sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==",
         "dependencies": {}
       },
+      "object-assign@4.1.1": {
+        "integrity": "sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==",
+        "dependencies": {}
+      },
       "open-props@1.5.1": {
         "integrity": "sha512-FA1T/0neIXWaJToPhS4HjBrgEFOeVOAUls9cOe1ME1BV4G25sIKdRNdZhzNNgOQ2RtfuZCTGtSKVnhjdD4Gzvg==",
+        "dependencies": {}
+      },
+      "picocolors@0.2.1": {
+        "integrity": "sha512-cMlDqaLEqfSaW8Z7N5Jw+lyIW869EzT73/F5lhtY9cLGoVxSXznfgfXMO0Z5K0o0Q2TkTXq+0KFsdnSe3jDViA==",
         "dependencies": {}
       },
       "picocolors@1.0.0": {
         "integrity": "sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==",
         "dependencies": {}
       },
+      "postcss-inject@1.0.2": {
+        "integrity": "sha512-r+MQRseJwIJGQwuRV/ThtdfWXCyMjwUwIuKXteVvWPbLTmY1ypn1KzRh+68L+E+cUhIebZb2WBv7vO2EzWRE+A==",
+        "dependencies": {
+          "object-assign": "object-assign@4.1.1",
+          "postcss": "postcss@7.0.39"
+        }
+      },
       "postcss-jit-props@1.0.8": {
         "integrity": "sha512-cM9RAnigzeWzEmr6Vd+oycL83ae0gBmEJQySWvoBFeUc81PhRn/oS/QzIafU3OFhG6sFbMYZr4rO927+PzT7uQ==",
         "dependencies": {
           "postcss": "postcss@8.4.17",
           "tiny-glob": "tiny-glob@0.2.9"
+        }
+      },
+      "postcss-js@4.0.0": {
+        "integrity": "sha512-77QESFBwgX4irogGVPgQ5s07vLvFqWr228qZY+w6lW599cRlK/HmnlivnnVUxkjHnCu4J16PDMHcH+e+2HbvTQ==",
+        "dependencies": {
+          "camelcase-css": "camelcase-css@2.0.1",
+          "postcss": "postcss@8.4.17"
+        }
+      },
+      "postcss@7.0.39": {
+        "integrity": "sha512-yioayjNbHn6z1/Bywyb2Y4s3yvDAeXGOyxqD+LnVOinq6Mdmd++SW2wUNVzavyyHxd6+DxzWGIuosg6P1Rj8uA==",
+        "dependencies": {
+          "picocolors": "picocolors@0.2.1",
+          "source-map": "source-map@0.6.1"
         }
       },
       "postcss@8.4.17": {
@@ -310,6 +345,10 @@
       },
       "source-map-js@1.0.2": {
         "integrity": "sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==",
+        "dependencies": {}
+      },
+      "source-map@0.6.1": {
+        "integrity": "sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==",
         "dependencies": {}
       },
       "tiny-glob@0.2.9": {
