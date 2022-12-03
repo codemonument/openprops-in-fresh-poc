@@ -1,9 +1,10 @@
 /* PostCSS Testfile with JIT*/
 
 body {
-    background-color: var(--green-9);
+    background-color: var(--surface1);
     color: var(--gray-0);
     font-family: var(--font-sans);
+    margin: var(--size-10);
 }
 
 a {
