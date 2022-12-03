@@ -7,6 +7,8 @@ import * as $0 from "./routes/index.tsx";
 import * as $1 from "./routes/openprops/[...path].ts";
 import * as $2 from "./routes/postcss-jit/[...path].ts";
 import * as $3 from "./routes/postcss-jit/index.tsx";
+import * as $4 from "./routes/postcss/[...path].ts";
+import * as $5 from "./routes/postcss/index.tsx";
 import * as $$0 from "./islands/Counter.tsx";
 
 const manifest = {
@@ -15,6 +17,8 @@ const manifest = {
     "./routes/openprops/[...path].ts": $1,
     "./routes/postcss-jit/[...path].ts": $2,
     "./routes/postcss-jit/index.tsx": $3,
+    "./routes/postcss/[...path].ts": $4,
+    "./routes/postcss/index.tsx": $5,
   },
   islands: {
     "./islands/Counter.tsx": $$0,

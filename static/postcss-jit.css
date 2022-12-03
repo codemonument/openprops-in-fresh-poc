@@ -1,0 +1,11 @@
+/* PostCSS Testfile with JIT*/
+
+body {
+    background-color: var(--indigo-9);
+    color: var(--gray-0);
+    font-family: var(--font-sans);
+}
+
+a {
+    color: var(--gray-0);
+}
