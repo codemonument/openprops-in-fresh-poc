@@ -10,12 +10,8 @@ export default function Home() {
       </Head>
       <div>
         <h1>With PostCSS</h1>
-        <img
-          src="/logo.svg"
-          width="128"
-          height="128"
-          alt="the fresh logo: a sliced lemon dripping with juice"
-        />
+        <a href="/">Back</a>
+       
         <p>
           Welcome to `fresh`. Try updating this message in the ./routes/index.tsx
           file, and refresh.
