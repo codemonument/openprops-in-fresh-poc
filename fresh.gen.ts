@@ -5,16 +5,16 @@
 import config from "./deno.json" assert { type: "json" };
 import * as $0 from "./routes/index.tsx";
 import * as $1 from "./routes/openprops/[...path].ts";
-import * as $2 from "./routes/postcss-jit.tsx";
-import * as $3 from "./routes/postcss-jit/[...path].ts";
+import * as $2 from "./routes/postcss-jit/[...path].ts";
+import * as $3 from "./routes/postcss-jit/index.tsx";
 import * as $$0 from "./islands/Counter.tsx";
 
 const manifest = {
   routes: {
     "./routes/index.tsx": $0,
     "./routes/openprops/[...path].ts": $1,
-    "./routes/postcss-jit.tsx": $2,
-    "./routes/postcss-jit/[...path].ts": $3,
+    "./routes/postcss-jit/[...path].ts": $2,
+    "./routes/postcss-jit/index.tsx": $3,
   },
   islands: {
     "./islands/Counter.tsx": $$0,
