@@ -7,7 +7,7 @@ export default function Home() {
         <title>Openprops in Deno Fresh</title>
       </Head>
      <h1>OpenProps in Deno Fresh</h1>
-     <a href="./with-postcss">With PostCSS</a>
+     <a href="./postcss-jit">With PostCSS JIT Mode</a>
     </>
   );
 }

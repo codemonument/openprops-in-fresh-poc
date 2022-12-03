@@ -9,7 +9,7 @@ export default function Home() {
         <link rel="stylesheet" href="/postcss/global.css"></link>
       </Head>
       <div>
-        <h1>With PostCSS</h1>
+        <h1>With PostCSS JIT Mode</h1>
         <a href="/">Back</a>
        
         <p>
