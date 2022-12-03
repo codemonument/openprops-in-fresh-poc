@@ -48,8 +48,6 @@ export const handler = async (
     key.startsWith("@")
   );
 
-  console.log(notProps);
-
   const openPropsObject = {
     ":root": Object.fromEntries(onlyProps),
   };
