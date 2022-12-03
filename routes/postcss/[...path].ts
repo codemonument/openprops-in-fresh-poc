@@ -41,6 +41,15 @@ export const handler = async (
   const onlyProps = Object.entries(OpenProps).filter(([key, val]) =>
     key.startsWith("--")
   );
+  const notProps = Object.entries(OpenProps).filter(([key, val]) =>
+    !key.startsWith("--")
+  );
+  const onlyAtRules = Object.entries(OpenProps).filter(([key, val]) =>
+    key.startsWith("@")
+  );
+
+  console.log(notProps);
+
   const openPropsObject = {
     ":root": Object.fromEntries(onlyProps),
   };
