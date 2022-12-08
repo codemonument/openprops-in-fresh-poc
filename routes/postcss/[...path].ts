@@ -4,13 +4,14 @@
  */
 
 import { HandlerContext } from "$fresh/server.ts";
-import * as log from "https://deno.land/std@0.167.0/log/mod.ts";
-import postcss from "https://deno.land/x/postcss@8.4.16/mod.js";
-import postcssJs from "npm:postcss-js@4.0.0";
-import OpenProps from "npm:open-props@1.5.1";
+import * as log from "std_log";
+import postcss from "postcss";
+import postcssJs from "postcss-js";
+import OpenProps from "open-props";
 
 export const postCssInstance = postcss([
   // postcssInject({
+  //   cssFilePath: "https://esm.sh/open-props@1.5.1/open-props/postcss/index.css",
   //   cssFilePath: "npm:open-props@1.5.1/open-props/postcss/index.css",
   // }),
 ]);
