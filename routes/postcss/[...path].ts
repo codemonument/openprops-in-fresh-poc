@@ -9,6 +9,9 @@ import postcss from "postcss";
 import postcssJs from "postcss-js";
 import OpenProps from "open-props";
 
+// Good: has all normal openprops
+// Bad: Normalize Openprop missing!
+
 export const postCssInstance = postcss([
   // postcssInject({
   //   cssFilePath: "https://esm.sh/open-props@1.5.1/open-props/postcss/index.css",
@@ -35,8 +38,6 @@ export const handler = async (
   _ctx: HandlerContext,
 ): Promise<Response> => {
   const webservPath = _ctx.params.path;
-  const filesystemPath = `static/${webservPath}`;
-  logger.debug(`PostCSS Transformed: ${filesystemPath}`);
 
   // sanitize OpenProps
   const onlyProps = Object.entries(OpenProps).filter(([key, val]) =>
@@ -52,6 +53,9 @@ export const handler = async (
   const openPropsObject = {
     ":root": Object.fromEntries(onlyProps),
   };
+  // const openPropsObject = {
+  //   ...Object.fromEntries(onlyProps),
+  // };
 
   const result = await postCssInstance.process(openPropsObject, {
     parser: postcssJs,
@@ -59,6 +63,11 @@ export const handler = async (
 
   const headers = new Headers();
   headers.set("Content-Type", "text/css");
+
+  logger.debug(
+    `Generated OpenProps CSS File: /postcss/${webservPath}`,
+    result.css,
+  );
 
   return new Response(result.css, { headers });
 };

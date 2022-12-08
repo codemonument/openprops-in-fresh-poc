@@ -6,8 +6,8 @@ export default function Home() {
     <>
       <Head>
         <title>Fresh App With Postcss</title>
-        <link rel="stylesheet" href="/postcss/openprops.css"></link>
-        <link rel="stylesheet" href="/postcss.css"></link>
+        <link rel="stylesheet" href="/postcss/dynamic-generated-openprops.css"></link>
+        <link rel="stylesheet" href="/postcss-full.css"></link>
       </Head>
       <div>
         <h1>With PostCSS Full Mode</h1>
