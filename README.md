@@ -28,3 +28,9 @@ This will watch the project directory and restart as necessary.
 3. Downloading unpkg and serve via Fresh: 
    1. Good: Outages from unpkg don't affect my deployments 
    2. Bad: Updating is harder (probably would write a script, which downloads the static sources for me, if this is the only vieable solution)
+
+## Useful Stuff
+
+- [OpenProps Source of normalize.css](https://github.com/argyleink/open-props/blob/main/src/extra/normalize.src.css)
+
+
