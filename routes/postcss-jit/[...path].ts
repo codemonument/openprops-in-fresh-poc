@@ -10,8 +10,12 @@ import postcss from "postcss";
 import postcssJitProps from "postcss-jit-props";
 // See: https://www.npmjs.com/package/open-props
 import OpenProps from "open-props";
+import postcssImport from "postcss-import";
 
-export const postCssInstance = postcss([postcssJitProps(OpenProps)]);
+export const postCssInstance = postcss([
+  postcssImport(),
+  postcssJitProps(OpenProps),
+]);
 
 log.setup({
   handlers: {

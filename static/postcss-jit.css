@@ -1,5 +1,8 @@
 /* PostCSS Testfile with JIT*/
 
+@import url('open-props/normalize.min.css');
+@import url('open-props/buttons.min.css');
+
 body {
     background-color: var(--indigo-9);
     color: var(--gray-0);
