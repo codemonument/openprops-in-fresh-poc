@@ -5,7 +5,7 @@ logBase.setup({
         console: new logBase.handlers.ConsoleHandler("DEBUG"),
     },
     loggers: {
-        "vserv.fun-dashboard": {
+        "openprops-in-fresh": {
             level: "DEBUG",
             handlers: ["console"],
         },
