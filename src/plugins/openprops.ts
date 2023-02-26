@@ -1,11 +1,19 @@
 import { z } from "./_deps.ts"
 import { Plugin, PluginRenderResult } from "$fresh/server.ts";
+import { DOMParser } from "./_deps.ts"
 
 export const OpenPropsPluginOptions = z.object({});
 export type OpenPropsPluginOptions = z.infer<typeof OpenPropsPluginOptions>;
 
+
 /**
  * Work in Progress!
+ * 
+ * Ideas: 
+ * https://deno.land/manual@v1.25.4/jsx_dom/deno_dom
+ * https://github.com/denoland/fresh/blob/1b3c9f2569c5d56a6d37c366cb5940f26b7e131e/www/main.ts
+ * https://github.com/denoland/fresh/blob/main/plugins/twind.ts
+ * 
  * @param options 
  * @returns 
  */
@@ -20,10 +28,10 @@ export function openPropsPlugin(options: OpenPropsPluginOptions) {
             const doc = new DOMParser().parseFromString(res.htmlText, "text/html");
             const allStyleTags = doc.querySelectorAll('style');
 
-            // transform inline styles
-            const inlineStyles =
-
             // transform styles with href 
+
+            // transform inline styles
+            // const inlineStyles = 
 
 
 
