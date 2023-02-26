@@ -1,5 +1,4 @@
 import { Head } from "$fresh/runtime.ts";
-import Counter from "../../islands/Counter.tsx";
 
 export default function Home() {
   return (
@@ -21,7 +20,6 @@ export default function Home() {
             and transforms it via postcss with openprops
           </li>
         </ol>
-        <Counter start={3} />
       </div>
     </>
   );
