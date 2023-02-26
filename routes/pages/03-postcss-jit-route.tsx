@@ -6,22 +6,20 @@ export default function Home() {
     <>
       <Head>
         <title>Fresh App With Postcss</title>
-        <link rel="stylesheet" href="/postcss/dynamic-generated-openprops.css">
+        <link rel="stylesheet" href="/postcss-jit/03-postcss-jit-route.css">
         </link>
-        <link rel="stylesheet" href="/02-postcss-route.css"></link>
       </Head>
       <div>
-        <h1>With PostCSS Route (not Treeshaken)</h1>
+        <h1>With PostCSS JIT Route (Treeshaken)</h1>
         <a href="/">Back</a>
 
         <ol>
           <li>CSS file is placed in /static</li>
           <li>
-            A request to /postcss/mystyles.css loads the css file from /static
-            and transforms it via postcss with openprops
+            A request to /postcss-jit/mystyles.css loads the css file from
+            /static and transforms it via postcss with openprops
           </li>
         </ol>
-        <Counter start={3} />
       </div>
     </>
   );

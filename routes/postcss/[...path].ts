@@ -59,6 +59,7 @@ export const handler = async (
 
   const result = await postCssInstance.process(openPropsObject, {
     parser: postcssJs,
+    from: undefined
   });
 
   const headers = new Headers();
