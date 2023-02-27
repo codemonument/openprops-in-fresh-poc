@@ -16,6 +16,12 @@ export const postcssInstance = postcss([
 ]);
 
 export async function preprocessCss() {
+
+    // cache npm:open-props locally 
+    // cmd does not work locally and npm: does not work at deno deploy! => committing open-props node_modules content into repo :(
+    // const cmd = new Deno.Command('deno cache --node-modules-dir npm:open-props@1.5.5');
+    // const out = await cmd.output();
+
     const cssFileEntries = expandGlob('css/*.css', { root: Deno.cwd() });
 
     for await (const file of cssFileEntries) {
