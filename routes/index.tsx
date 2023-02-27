@@ -21,6 +21,12 @@ export default function Home() {
             03 - With PostCSS JIT Route (Treeshaken)
           </a>
         </li>
+      
+        <li>
+          <a href="./pages/04-dynamic-at-startup">
+          04 -With dynamically generated css at server start (Treeshaken)
+          </a>
+        </li>
       </ul>
     </>
   );
