@@ -4,7 +4,8 @@ import { join } from "https://deno.land/std@0.178.0/path/mod.ts";
 /**
  * Get Latest version: https://unpkg.com/open-props
  */
-const baseUrl = "https://unpkg.com/open-props@1.5.1";
+const version = '1.5.5';
+const baseUrl = `https://unpkg.com/open-props@${version}`;
 
 // Idea: provide these dependencies for postcssImport to allow compilation to work properly
 // This is the replacement for caching node_modules with open-props locally
@@ -25,3 +26,6 @@ const buttons =
   await (await fetch(`${baseUrl}/buttons.min.css`))
     .text();
 await Deno.writeTextFile(join(targetDir, "buttons.min.css"), buttons);
+
+// write version file
+await Deno.writeTextFile(join(targetDir, 'VERSION'), version)
