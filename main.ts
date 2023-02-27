@@ -10,7 +10,9 @@ import { preprocessCss } from "./src/preprocess-css.ts";
 
 // make sure that the open-props files are available in css_deps folder 
 // Note: was a dnamic import, but dynamic imports are not allowed on deno currently
-import './scripts/download-openprops.ts';
+// Note 2: Deno.writeTextFile is not available on deno deploy. 
+// => need to have all the files pre-downloaded and pushed into git!
+// import './scripts/download-openprops.ts';
 
 // generate css files in /static via postcss (Test 04)
 preprocessCss()
