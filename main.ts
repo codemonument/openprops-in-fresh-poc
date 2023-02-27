@@ -6,5 +6,9 @@
 
 import { start } from "$fresh/server.ts";
 import manifest from "./fresh.gen.ts";
+import { preprocessCss } from "./src/preprocess-css.ts";
+
+// generate css files in /static via postcss (Test 04)
+preprocessCss()
 
 await start(manifest);
