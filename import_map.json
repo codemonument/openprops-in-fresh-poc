@@ -8,7 +8,7 @@
     "preact-render-to-string": "https://esm.sh/*preact-render-to-string@5.2.4",
     "@preact/signals": "https://esm.sh/*@preact/signals@1.0.3",
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.0.1",
-    "open-props": "https://esm.sh/open-props@1.5.1",
+    "open-props": "https://esm.sh/open-props@1.5.5",
     "postcss": "https://deno.land/x/postcss@8.4.16/mod.js",
     "postcss-js": "https://esm.sh/postcss-js@4.0.0",
     "postcss-jit-props": "https://esm.sh/postcss-jit-props@1.0.8",

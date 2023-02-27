@@ -684,6 +684,7 @@
     "https://deno.land/x/ts_morph@16.0.0/ts_morph.js": "9fc0f3d6a3997c2df023fabc4e529d2117d214ffd4fd04247ca2f56c4e9cd470",
     "https://esm.sh/*preact-render-to-string@5.2.4": "bc2c731f186efa0c21b57b43789d6c107e0b8ef320f472954ba6fedfb2943372",
     "https://esm.sh/open-props@1.5.1": "1cc4f0d56d4fccf4d8eb1f93fb0cd487b8337c00183a31d3a615ca97fbb6abc9",
+    "https://esm.sh/open-props@1.5.5": "3be047dbfdb42f1e23561682217c97971cce144e570e78fbe37b72c793693ad9",
     "https://esm.sh/postcss-import@15.1.0": "1af3a54efafaf035e131134d34a81eb8597cef1e6c51e8c92923635b9806b346",
     "https://esm.sh/postcss-jit-props@1.0.8": "6a85ce9b2aed713b733f890b5e01c92404bc5633e8f5613fc3eb022e5f290f2b",
     "https://esm.sh/postcss-js@4.0.0": "3a7b1d251db7ae7143450591f72c22be1bd9c8f58c1da341cfb5110f592e1a14",
@@ -727,6 +728,8 @@
     "https://esm.sh/v102/source-map-js@1.0.2/deno/source-map-js.js": "2dcfe0b26c7bc926fe619d644cad9e74f079a69a4e5ccacc39849d305dc5626e",
     "https://esm.sh/v102/source-map-js@1.0.2/source-map.d.ts": "e1d24eb7d0ac71a5a0d0f9cc64d2ce859dc015cb85c16434d20ec91b182d4ee6",
     "https://esm.sh/v102/sugarss@4.0.1/deno/sugarss.js": "51321b90de02e7dc6a8c73d24d6cdc04e6aad570947cd9ae6a3d364f698f9dc8",
+    "https://esm.sh/v108/open-props@1.5.5/deno/open-props.js": "2abc21cbfd8c0bf1bfd7941250936efe693184096706165801d564c2bb110106",
+    "https://esm.sh/v108/open-props@1.5.5/dist/open-props.module.d.ts": "1d16c435b86e4684b8f28914a0480158609e3acca57ecd689acae27450e5fc01",
     "https://esm.sh/v95/preact@10.11.0/hooks/src/index.d.ts": "5c29febb624fc25d71cb0e125848c9b711e233337a08f7eacfade38fd4c14cc3",
     "https://esm.sh/v95/preact@10.11.0/jsx-runtime/src/index.d.ts": "e153460ed2b3fe2ad8b93696ecd48fbf73cd628b0b0ea6692b71804a3af69dfd",
     "https://esm.sh/v95/preact@10.11.0/src/index.d.ts": "1a5c331227be54be6515b0c92a469d352834fa413963ae84a39a05a3177111f6",
@@ -769,6 +772,7 @@
   },
   "npm": {
     "specifiers": {
+      "open-props": "open-props@1.5.1",
       "open-props@1.5.1": "open-props@1.5.1",
       "postcss-inject@1.0.2": "postcss-inject@1.0.2",
       "postcss-jit-props@1.0.8": "postcss-jit-props@1.0.8",
