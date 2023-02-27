@@ -33,4 +33,8 @@ This will watch the project directory and restart as necessary.
 
 - [OpenProps Source of normalize.css](https://github.com/argyleink/open-props/blob/main/src/extra/normalize.src.css)
 
+## Notes 
 
+- Deno vendoring open-props like this seems not to work: `deno vendor npm:open-props@1.5.5`
+- Caching open-props node_modules like this works, but only when node_modules is checked into git: 
+  `deno cache --node-modules-dir npm:open-props@1.5.5`
