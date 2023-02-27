@@ -9,7 +9,7 @@ const baseUrl = `https://unpkg.com/open-props@${version}`;
 
 // Idea: provide these dependencies for postcssImport to allow compilation to work properly
 // This is the replacement for caching node_modules with open-props locally
-const targetDir = `css-deps/open-props`;
+const targetDir = `css_deps/open-props`;
 await ensureDir(targetDir);
 
 const openPropsMin =

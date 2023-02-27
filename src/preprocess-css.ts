@@ -11,7 +11,9 @@ import { join } from "std_path"
 const logger = log.getLogger("openprops-in-fresh");
 
 export const postcssInstance = postcss([
-    postcssImport(),
+    postcssImport({
+        addModulesDirectories: ['css_deps']
+    }    ),
     postcssJitProps(OpenProps),
 ]);
 
