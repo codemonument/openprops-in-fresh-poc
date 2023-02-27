@@ -13,6 +13,7 @@
     "postcss-js": "https://esm.sh/postcss-js@4.0.0",
     "postcss-jit-props": "https://esm.sh/postcss-jit-props@1.0.8",
     "postcss-import": "https://esm.sh/postcss-import@15.1.0",
-    "std_log": "https://deno.land/std@0.167.0/log/mod.ts"
+    "std_log": "https://deno.land/std@0.167.0/log/mod.ts",
+    "std_fs": "https://deno.land/std@0.178.0/fs/mod.ts"
   }
 }
