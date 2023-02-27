@@ -20,13 +20,14 @@ export async function preprocessCss() {
 
     for await (const file of cssFileEntries) {
         const inPath = file.path;
+        const outPath = join('static', file.name);
         const cssContent = await Deno.readTextFile(inPath);
         const result = await postcssInstance.process(cssContent, {
             from: inPath,
+            to: outPath
         });
 
         logger.info(`CSS generated: ${file.name}`);
-        const outPath = join('static', file.name);
 
         await Deno.writeTextFile(outPath, result.css);
     }
