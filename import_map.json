@@ -15,6 +15,7 @@
     "postcss-import": "https://esm.sh/postcss-import@15.1.0",
     "std_log": "https://deno.land/std@0.167.0/log/mod.ts",
     "std_fs": "https://deno.land/std@0.178.0/fs/mod.ts",
-    "std_path": "https://deno.land/std@0.178.0/path/mod.ts"
+    "std_path": "https://deno.land/std@0.178.0/path/mod.ts", 
+    "@kvs/memorystorage":"https://esm.sh/@kvs/memorystorage@2.1.3"
   }
 }

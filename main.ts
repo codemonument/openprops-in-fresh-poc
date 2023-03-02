@@ -15,7 +15,12 @@ import { preprocessCss } from "./src/preprocess-css.ts";
 // import './scripts/download-openprops.ts';
 
 // generate css files in /static via postcss (Test 04)
-preprocessCss()
+// NOTE: DOES NOT WORK ON DENO DEPLOY! 
+// - but the result will be generated locally every time and can be committed 
+
+// if (Deno.writeTextFile) {
+//     preprocessCss()
+// }
 
 // new change to force deployment
 
