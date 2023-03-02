@@ -38,7 +38,6 @@ export const handler = async (
 ): Promise<Response> => {
   const webservPath = _ctx.params.path;
   const fsPath = `static/${webservPath}`;
-  logger.debug(`PostCSS Transformed: ${fsPath}`);
 
   // load input css file
   const rawCssContent = await Deno.readTextFile(fsPath);
@@ -53,10 +52,12 @@ export const handler = async (
       from: fsPath,
     });
     cssCache.set(fileHash, processingResult.css)
+    logger.debug(`PostCSS Transformed: ${fsPath}`, { fileHash });
   }
 
   // get storedCSS from cache
   const storedCSS = cssCache.get(fileHash);
+  logger.debug(`PostCSS found in cache: ${fsPath}`, { fileHash });
 
   // deliver stored css
   return new Response(storedCSS, {
