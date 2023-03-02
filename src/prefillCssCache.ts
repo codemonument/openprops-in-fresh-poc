@@ -9,6 +9,7 @@ import { expandGlob, WalkEntry } from "std_fs"
 import { encode as encodeBase64 } from "std_encoding_base64";
 import { cssCache } from "./cssCache.ts";
 
+// FIXME: Why does this logger not log at the start?!?
 const logger = log.getLogger("openprops-in-fresh");
 
 export const postcssInstance = postcss([
@@ -35,7 +36,7 @@ async function loadProcessAndCacheCss(file: WalkEntry) {
     });
     cssCache.set(fileHash, processingResult.css)
 
-    logger.debug(`PostCSS Transformed and Cached: ${fsPath}`, { fileHash });
+    console.debug(`PostCSS Transformed and Cached: ${fsPath}`, { fileHash });
 }
 
 /**
@@ -45,12 +46,12 @@ export async function prefillCssCache() {
 
     const cssFileEntries = expandGlob('css/*.css', { root: Deno.cwd() });
     for await (const file of cssFileEntries) {
-        loadProcessAndCacheCss(file)
+        await loadProcessAndCacheCss(file)
     }
 
     const cssStaticEntries = expandGlob('static/*.css', { root: Deno.cwd() });
     for await (const file of cssStaticEntries) {
-        loadProcessAndCacheCss(file);
+        await loadProcessAndCacheCss(file);
     }
 }
 

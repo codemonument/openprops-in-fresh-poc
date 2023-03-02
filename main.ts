@@ -19,6 +19,6 @@ import { prefillCssCache } from "./src/prefillCssCache.ts";
 // - but the result will be generated locally every time and can be committed 
 
 
-prefillCssCache();
+await prefillCssCache();
 
 await start(manifest);
