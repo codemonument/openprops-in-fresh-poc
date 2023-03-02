@@ -6,7 +6,7 @@
 
 import { start } from "$fresh/server.ts";
 import manifest from "./fresh.gen.ts";
-import { preprocessCss } from "./src/preprocess-css.ts";
+import { prefillCssCache } from "./src/prefillCssCache.ts";
 
 // make sure that the open-props files are available in css_deps folder 
 // Note: was a dnamic import, but dynamic imports are not allowed on deno currently
@@ -18,10 +18,7 @@ import { preprocessCss } from "./src/preprocess-css.ts";
 // NOTE: DOES NOT WORK ON DENO DEPLOY! 
 // - but the result will be generated locally every time and can be committed 
 
-// if (Deno.writeTextFile) {
-//     preprocessCss()
-// }
 
-// new change to force deployment
+prefillCssCache();
 
 await start(manifest);
