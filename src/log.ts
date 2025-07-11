@@ -1,15 +1,15 @@
-import * as logBase from "std_log";
+import * as logBase from "@std/log";
 
 logBase.setup({
-    handlers: {
-        console: new logBase.handlers.ConsoleHandler("DEBUG"),
+  handlers: {
+    console: new logBase.ConsoleHandler("DEBUG"),
+  },
+  loggers: {
+    "openprops-in-fresh": {
+      level: "DEBUG",
+      handlers: ["console"],
     },
-    loggers: {
-        "openprops-in-fresh": {
-            level: "DEBUG",
-            handlers: ["console"],
-        },
-    },
+  },
 });
 
-export const log = logBase; 
+export const log = logBase;

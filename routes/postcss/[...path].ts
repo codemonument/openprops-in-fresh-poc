@@ -4,7 +4,7 @@
  */
 
 import { HandlerContext } from "$fresh/server.ts";
-import * as log from "std_log";
+import * as log from "@std/log";
 import postcss from "postcss";
 import postcssJs from "postcss-js";
 import OpenProps from "open-props";
@@ -21,7 +21,7 @@ export const postCssInstance = postcss([
 
 log.setup({
   handlers: {
-    console: new log.handlers.ConsoleHandler("DEBUG"),
+    console: new log.ConsoleHandler("DEBUG"),
   },
   loggers: {
     "postcss_resource_route": {
@@ -59,7 +59,7 @@ export const handler = async (
 
   const result = await postCssInstance.process(openPropsObject, {
     parser: postcssJs,
-    from: undefined
+    from: undefined,
   });
 
   const headers = new Headers();
