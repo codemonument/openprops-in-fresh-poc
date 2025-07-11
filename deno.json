@@ -3,11 +3,33 @@
     "dev": "deno run -A --watch=routes/,css/ dev.ts",
     "prod": "deno run -A main.ts ",
     "download-openprops": "deno run --allow-net --allow-write --allow-read ./scripts/download-openprops.ts",
-    "cache-openprops": "deno cache --node-modules-dir npm:open-props@1.5.5"
+    "cache-openprops": "deno cache --node-modules-dir npm:open-props@1.5.5",
+    "fresh-update": "deno run -A -r https://fresh.deno.dev/update",
+    "build": "deno run -A dev.ts build",
+    "preview": "deno run -A main.ts"
   },
-  "importMap": "./import_map.json",
-  "compilerOptions": {
-    "jsx": "react-jsx",
-    "jsxImportSource": "preact"
-  }
+  "compilerOptions": { "jsx": "react-jsx", "jsxImportSource": "preact" },
+  "imports": {
+    "@/": "./",
+    "@src/": "./src/",
+    "$fresh/": "https://deno.land/x/fresh@1.7.3/",
+    "preact": "https://esm.sh/preact@10.22.0",
+    "preact/": "https://esm.sh/preact@10.22.0/",
+    "preact-render-to-string": "https://esm.sh/*preact-render-to-string@5.2.4",
+    "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
+    "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
+    "open-props": "https://esm.sh/open-props@1.5.5",
+    "postcss": "https://deno.land/x/postcss@8.4.16/mod.js",
+    "postcss-jit-props": "https://esm.sh/postcss-jit-props@1.0.8",
+    "postcss-import": "https://esm.sh/postcss-import@15.1.0",
+    "zod": "https://deno.land/x/zod@v3.20.5/mod.ts",
+    "std_log": "https://deno.land/std@0.167.0/log/mod.ts",
+    "std_fs": "https://deno.land/std@0.178.0/fs/mod.ts",
+    "std_path": "https://deno.land/std@0.178.0/path/mod.ts",
+    "std_encoding_base64": "https://deno.land/std@0.178.0/encoding/base64.ts",
+    "@kvs/memorystorage": "https://esm.sh/@kvs/memorystorage@2.1.3",
+    "postcss-js": "https://esm.sh/postcss-js@4.0.0"
+  },
+  "lint": { "rules": { "tags": ["fresh", "recommended"] } },
+  "exclude": ["**/_fresh/*"]
 }
