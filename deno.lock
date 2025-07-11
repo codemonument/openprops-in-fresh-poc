@@ -798,6 +798,7 @@
     "dependencies": [
       "jsr:@std/fs@^1.0.19",
       "jsr:@std/log@~0.224.14",
+      "jsr:@std/path@^1.1.1",
       "npm:open-props@1.5.5",
       "npm:postcss-import@15.1.0",
       "npm:postcss-jit-props@1.0.8",
