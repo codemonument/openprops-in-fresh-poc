@@ -12,7 +12,7 @@ import postcssJitProps from "postcss-jit-props";
 import OpenProps from "open-props";
 import postcssImport from "postcss-import";
 import { cssCache } from "@src/cssCache.ts";
-import { encode as encodeBase64 } from "std_encoding_base64";
+import { encodeBase64 } from "@std/encoding";
 import { z } from "zod";
 
 export const postCssInstance = postcss([

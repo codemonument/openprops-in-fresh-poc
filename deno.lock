@@ -3,6 +3,7 @@
   "specifiers": {
     "jsr:@luca/esbuild-deno-loader@0.11.0": "0.11.0",
     "jsr:@std/bytes@^1.0.2": "1.0.2",
+    "jsr:@std/encoding@^1.0.10": "1.0.10",
     "jsr:@std/encoding@^1.0.5": "1.0.10",
     "jsr:@std/fmt@^1.0.5": "1.0.8",
     "jsr:@std/fs@*": "1.0.19",
@@ -11,7 +12,7 @@
     "jsr:@std/internal@^1.0.9": "1.0.9",
     "jsr:@std/io@~0.225.2": "0.225.2",
     "jsr:@std/log@~0.224.14": "0.224.14",
-    "jsr:@std/path@^1.0.6": "1.0.8",
+    "jsr:@std/path@^1.0.6": "1.1.1",
     "jsr:@std/path@^1.0.8": "1.0.8",
     "jsr:@std/path@^1.1.1": "1.1.1",
     "npm:open-props@1.5.5": "1.5.5",
@@ -25,7 +26,7 @@
       "integrity": "c05a989aa7c4ee6992a27be5f15cfc5be12834cab7ff84cabb47313737c51a2c",
       "dependencies": [
         "jsr:@std/bytes",
-        "jsr:@std/encoding",
+        "jsr:@std/encoding@^1.0.5",
         "jsr:@std/path@^1.0.6"
       ]
     },
@@ -796,6 +797,7 @@
   },
   "workspace": {
     "dependencies": [
+      "jsr:@std/encoding@^1.0.10",
       "jsr:@std/fs@^1.0.19",
       "jsr:@std/log@~0.224.14",
       "jsr:@std/path@^1.1.1",
