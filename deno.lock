@@ -5,7 +5,8 @@
     "jsr:@std/bytes@^1.0.2": "1.0.2",
     "jsr:@std/encoding@^1.0.5": "1.0.10",
     "jsr:@std/path@^1.0.6": "1.0.8",
-    "npm:open-props@1.5.5": "1.5.5"
+    "npm:open-props@1.5.5": "1.5.5",
+    "npm:postcss@8.4.16": "8.4.16"
   },
   "jsr": {
     "@luca/esbuild-deno-loader@0.11.0": {
@@ -27,8 +28,26 @@
     }
   },
   "npm": {
+    "nanoid@3.3.11": {
+      "integrity": "sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==",
+      "bin": true
+    },
     "open-props@1.5.5": {
       "integrity": "sha512-MiNn+fZFcdEn8OcgHMqcCa3m41XiIL5yiPW/j4+ozPrk7SGEvlQsr5J2qE2Jp/sHSOpuVapcCBCFx11fE5pZUA=="
+    },
+    "picocolors@1.1.1": {
+      "integrity": "sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA=="
+    },
+    "postcss@8.4.16": {
+      "integrity": "sha512-ipHE1XBvKzm5xI7hiHCZJCSugxvsdq2mPnsq5+UF+VHCjiBvtDrlxJfMBToWaP9D5XlgNmcFGqoHmUn0EYEaRQ==",
+      "dependencies": [
+        "nanoid",
+        "picocolors",
+        "source-map-js"
+      ]
+    },
+    "source-map-js@1.2.1": {
+      "integrity": "sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA=="
     }
   },
   "redirects": {
@@ -650,7 +669,8 @@
   },
   "workspace": {
     "dependencies": [
-      "npm:open-props@1.5.5"
+      "npm:open-props@1.5.5",
+      "npm:postcss@8.4.16"
     ]
   }
 }
