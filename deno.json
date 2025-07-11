@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "start": "deno run -A --watch=routes/,css/ dev.ts",
+    "dev": "deno run -A --watch=routes/,css/ dev.ts",
     "prod": "deno run -A main.ts ",
     "download-openprops": "deno run --allow-net --allow-write --allow-read ./scripts/download-openprops.ts",
     "cache-openprops": "deno cache --node-modules-dir npm:open-props@1.5.5"
