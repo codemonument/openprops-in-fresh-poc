@@ -25,10 +25,13 @@ export const handler = async (
   _req: Request,
   _ctx: FreshContext,
 ) => {
+  //   console.info("tailwind route, got path", _ctx.params.path);
   const cssContent = await Deno.readTextFile("css/tailwind.css");
+  //   console.debug("cssContent", cssContent);
   const result = await postCssInstance.process(cssContent, {
     from: "css/tailwind.css",
   });
+  //   console.debug("result", result);
   return new Response(result.css, {
     headers: {
       "Content-Type": "text/css",

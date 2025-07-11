@@ -9,10 +9,15 @@ export default function Home() {
         </link>
       </Head>
       <div>
-        <h1>Tailwind in Fresh via postcss</h1>
-        <a href="/">Back</a>
+        <h1 class="text-2xl font-bold">Tailwind in Fresh via postcss</h1>
+        <a
+          class="text-blue-500 hover:text-blue-600 hover:cursor-pointer"
+          href="/"
+        >
+          Back
+        </a>
 
-        <ol>
+        <ol class="">
           <li>CSS files are placed in /css</li>
           <li>
             At server start, all *.css files in /css will be read and 'compiled'
