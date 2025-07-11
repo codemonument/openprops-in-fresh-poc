@@ -1,7 +1,7 @@
 import { log } from "@src/log.ts";
 import { FreshContext } from "$fresh/server.ts";
-import { generateTailwindCSS } from "@bjesuiter/deno-tailwindcss-iso";
 import { cssCache } from "@src/cssCache.ts";
+import { generateAndCacheTailwindCss } from "@src/oxide.ts";
 
 log.setup({
   handlers: {
@@ -29,7 +29,7 @@ export const handler = async (
     });
   }
 
-  const resultCss = await generateTailwindCSS();
+  const resultCss = await generateAndCacheTailwindCss();
 
   return new Response(resultCss, {
     headers: {
