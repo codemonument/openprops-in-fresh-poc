@@ -21,10 +21,16 @@ export default function Home() {
             03 - With PostCSS JIT Route (Treeshaken)
           </a>
         </li>
-      
+
         <li>
           <a href="./pages/04-dynamic-at-startup">
-          04 -With dynamically generated css at server start (Treeshaken)
+            04 -With dynamically generated css at server start (Treeshaken)
+          </a>
+        </li>
+
+        <li>
+          <a href="./pages/05-tailwind">
+            05 - Tailwind in Fresh via postcss
           </a>
         </li>
       </ul>

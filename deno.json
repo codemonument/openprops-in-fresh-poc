@@ -20,6 +20,7 @@
     "@std/fs": "jsr:@std/fs@^1.0.19",
     "@std/log": "jsr:@std/log@^0.224.14",
     "@std/path": "jsr:@std/path@^1.1.1",
+    "@tailwindcss/postcss": "npm:@tailwindcss/postcss@^4.1.11",
     "preact": "https://esm.sh/preact@10.22.0",
     "preact/": "https://esm.sh/preact@10.22.0/",
     "preact-render-to-string": "https://esm.sh/*preact-render-to-string@5.2.4",
@@ -29,6 +30,7 @@
     "postcss": "npm:postcss@8.4.16",
     "postcss-jit-props": "npm:postcss-jit-props@1.0.8",
     "postcss-import": "npm:postcss-import@15.1.0",
+    "tailwindcss": "npm:tailwindcss@^4.1.11",
     "zod": "npm:zod@3.22.4",
     "@kvs/memorystorage": "https://esm.sh/@kvs/memorystorage@2.1.3",
     "postcss-js": "npm:postcss-js@4.0.0"
@@ -43,5 +45,6 @@
   },
   "exclude": [
     "**/_fresh/*"
-  ]
+  ],
+  "nodeModulesDir": "auto"
 }
