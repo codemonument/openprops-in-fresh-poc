@@ -10,9 +10,11 @@ import * as $pages_02_postcss_route from "./routes/pages/02-postcss-route.tsx";
 import * as $pages_03_postcss_jit_route from "./routes/pages/03-postcss-jit-route.tsx";
 import * as $pages_04_dynamic_at_startup from "./routes/pages/04-dynamic-at-startup.tsx";
 import * as $pages_05_tailwind from "./routes/pages/05-tailwind.tsx";
+import * as $pages_06_tailwind_iso from "./routes/pages/06-tailwind-iso.tsx";
 import * as $postcss_jit_path_ from "./routes/postcss-jit/[...path].ts";
 import * as $postcss_path_ from "./routes/postcss/[...path].ts";
-import * as $tailwind_path_ from "./routes/tailwind/[...path].ts";
+import * as $tailwind_iso_css from "./routes/tailwind-iso/css.ts";
+import * as $tailwind_path_ from "./routes/tailwind/([...path]).ts";
 import * as $Counter from "./islands/Counter.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
@@ -26,9 +28,11 @@ const manifest = {
     "./routes/pages/03-postcss-jit-route.tsx": $pages_03_postcss_jit_route,
     "./routes/pages/04-dynamic-at-startup.tsx": $pages_04_dynamic_at_startup,
     "./routes/pages/05-tailwind.tsx": $pages_05_tailwind,
+    "./routes/pages/06-tailwind-iso.tsx": $pages_06_tailwind_iso,
     "./routes/postcss-jit/[...path].ts": $postcss_jit_path_,
     "./routes/postcss/[...path].ts": $postcss_path_,
-    "./routes/tailwind/[...path].ts": $tailwind_path_,
+    "./routes/tailwind-iso/css.ts": $tailwind_iso_css,
+    "./routes/tailwind/([...path]).ts": $tailwind_path_,
   },
   islands: {
     "./islands/Counter.tsx": $Counter,

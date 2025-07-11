@@ -1,11 +1,6 @@
-import tailwindPostcss from "@tailwindcss/postcss";
-import postcss from "postcss";
 import { log } from "@src/log.ts";
 import { FreshContext } from "$fresh/server.ts";
-
-export const postCssInstance = postcss([
-  tailwindPostcss(),
-]);
+import { generateTailwindCSS } from "@bjesuiter/deno-tailwindcss-iso";
 
 log.setup({
   handlers: {
@@ -26,13 +21,15 @@ export const handler = async (
   _ctx: FreshContext,
 ) => {
   //   console.info("tailwind route, got path", _ctx.params.path);
-  const cssContent = await Deno.readTextFile("css/tailwind.css");
-  //   console.debug("cssContent", cssContent);
-  const result = await postCssInstance.process(cssContent, {
-    from: "css/tailwind.css",
+  const css = `@import "tailwindcss";`;
+  const content = await Deno.readTextFile("routes/pages/06-tailwind-iso.tsx");
+
+  const resultCss = await generateTailwindCSS({
+    content: content,
+    css: css,
   });
-  //   console.debug("result", result);
-  return new Response(result.css, {
+
+  return new Response(resultCss, {
     headers: {
       "Content-Type": "text/css",
     },

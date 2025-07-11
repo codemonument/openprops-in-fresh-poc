@@ -33,6 +33,12 @@ export default function Home() {
             05 - Tailwind in Fresh via postcss
           </a>
         </li>
+
+        <li>
+          <a href="./pages/06-tailwind-iso">
+            06 - Tailwind in Fresh via tailwind-iso
+          </a>
+        </li>
       </ul>
     </>
   );
