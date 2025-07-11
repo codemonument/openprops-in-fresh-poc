@@ -8,8 +8,10 @@ export default function Home() {
         <link rel="stylesheet" href="/tailwind-iso/css">
         </link>
       </Head>
-      <div>
-        <h1 class="text-2xl font-bold">Tailwind in Fresh via postcss</h1>
+      <div class="p-4">
+        <h1 class="text-2xl font-bold text-green-500">
+          Tailwind in Fresh via tailwind-iso
+        </h1>
         <a
           class="text-green-500 hover:text-green-600 hover:cursor-pointer"
           href="/"

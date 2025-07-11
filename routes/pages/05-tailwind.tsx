@@ -9,7 +9,10 @@ export default function Home() {
         </link>
       </Head>
       <div>
-        <h1 class="text-2xl font-bold">Tailwind in Fresh via postcss</h1>
+        <h1 class="text-2xl font-bold text-green-700">
+          Tailwind in Fresh via postcss (disabled right now - default browser
+          styles
+        </h1>
         <a
           class="text-blue-500 hover:text-blue-600 hover:cursor-pointer"
           href="/"
