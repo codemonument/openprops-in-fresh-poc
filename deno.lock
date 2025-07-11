@@ -18,6 +18,7 @@
     "npm:open-props@1.5.5": "1.5.5",
     "npm:postcss-import@15.1.0": "15.1.0_postcss@8.4.16",
     "npm:postcss-jit-props@1.0.8": "1.0.8_postcss@8.4.16",
+    "npm:postcss-js@4.0.0": "4.0.0_postcss@8.4.16",
     "npm:postcss@8.4.16": "8.4.16",
     "npm:zod@3.22.4": "3.22.4"
   },
@@ -80,6 +81,9 @@
     }
   },
   "npm": {
+    "camelcase-css@2.0.1": {
+      "integrity": "sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA=="
+    },
     "function-bind@1.1.2": {
       "integrity": "sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA=="
     },
@@ -131,6 +135,13 @@
       "dependencies": [
         "postcss",
         "tiny-glob"
+      ]
+    },
+    "postcss-js@4.0.0_postcss@8.4.16": {
+      "integrity": "sha512-77QESFBwgX4irogGVPgQ5s07vLvFqWr228qZY+w6lW599cRlK/HmnlivnnVUxkjHnCu4J16PDMHcH+e+2HbvTQ==",
+      "dependencies": [
+        "camelcase-css",
+        "postcss"
       ]
     },
     "postcss-value-parser@4.2.0": {
@@ -804,6 +815,7 @@
       "npm:open-props@1.5.5",
       "npm:postcss-import@15.1.0",
       "npm:postcss-jit-props@1.0.8",
+      "npm:postcss-js@4.0.0",
       "npm:postcss@8.4.16",
       "npm:zod@3.22.4"
     ]
